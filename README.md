@@ -8,7 +8,7 @@ This repo is to hold the backend for Inpursuit.
 
 This call is to return posts matched with the user_interests. Return an array of objects where the user_interests.interestsId == posts.interestsId && posts.pursuitId == pursuits.pursuitId && user.userId == loggedInUser. Limit to 15.
 
-##### Joined Tables
+##### JOIN Tables
 
 Posts<br />
 Pursuits<br />
@@ -39,7 +39,7 @@ user.userId == posts.userId
 
 This call is to return the most viewed posts. Return an array of objects where the posts.pursuitId == pursuits.pursuitId. Limit to 15. Ordered by posts_views count.
 
-##### Joined Tables
+##### JOIN Tables
 
 Posts<br />
 Pursuits<br />
@@ -72,7 +72,7 @@ user.userId == posts.userId
 
 This call is to return the standard (an array of the most recent) posts. Return an array of objects where the posts.pursuitId == pursuits.pursuitId && user.userId == posts.userId. Also return the details of that posts where days.pursuitId == pursuits.pursuitId && setbacks.pursuitId == pursuits.pursuitId && team.pursuitId == pursuits.pursuitId && engagements.pursuitId == pursuits.pursuitId. Limit to 15. 
 
-##### Joined Tables
+##### JOIN Tables
 
 Posts<br />
 Pursuits<br />
@@ -130,7 +130,7 @@ engagements.pursuitId == pursuits.pursuitId
 
 This call is to return setbacks. Return an array of objects where the setbacks.pursuitId == pursuits.pursuitId && setbacks.setbackId == posts.postId && user.userId == setbacks.userId. Limit to 15. 
 
-##### Joined Tables
+##### JOIN Tables
 
 Setbacks<br />
 Pursuits<br />
@@ -158,7 +158,7 @@ user.userId == setbacks.userId
 
 This call is to return challenges. Return an array of objects where the challenge.challengeId == posts.postId && user.userId == challenge.userId && challenge.challengeId == challenge_engagements.challengeId. Limit to 15. 
 
-##### Joined Tables
+##### JOIN Tables
 
 Challenge<br />
 Challenge_engagements<br />
