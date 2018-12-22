@@ -2,12 +2,6 @@
 
 This repo is to hold the backend for Inpursuit.
 
-## Links to access database
-
-#### To access the user table use:
-
-https://arcane-mesa-59373.herokuapp.com/get-mock-user
-
 ## Home Feed
 
 #### Your Picks
@@ -23,8 +17,8 @@ User_interests
 
 #### WHERE Values
 
-user_interests.interestsId == posts.interestsId
-posts.pursuitId == pursuits.pursuitId
+user_interests.interestsId == posts.interestsId<br />
+posts.pursuitId == pursuits.pursuitId<br />
 user.userId == posts.userId
 
 ```
@@ -54,8 +48,8 @@ Posts_views
 
 #### WHERE Values
 
-posts_views.postId = posts.postId
-posts.pursuitId == pursuits.pursuitId
+posts_views.postId = posts.postId<br />
+posts.pursuitId == pursuits.pursuitId<br />
 user.userId == posts.userId
 
 
@@ -90,11 +84,11 @@ Engagements
 
 #### WHERE Values
 
-posts.pursuitId == pursuits.pursuitId
-user.userId == posts.userId
-days.pursuitId == pursuits.pursuitId
-setbacks.pursuitId == pursuits.pursuitId
-team.pursuitId == pursuits.pursuitId
+posts.pursuitId == pursuits.pursuitId<br />
+user.userId == posts.userId<br />
+days.pursuitId == pursuits.pursuitId<br />
+setbacks.pursuitId == pursuits.pursuitId<br />
+team.pursuitId == pursuits.pursuitId<br />
 engagements.pursuitId == pursuits.pursuitId
 
 ```
@@ -145,8 +139,8 @@ User
 
 #### WHERE Values
 
-setbacks.pursuitId == pursuits.pursuitId
-setbacks.conflictId == posts.postId
+setbacks.pursuitId == pursuits.pursuitId<br />
+setbacks.conflictId == posts.postId<br />
 user.userId == setbacks.userId
 
 ```
@@ -173,8 +167,8 @@ User
 
 #### WHERE Values
 
-challenge.challengeId == posts.postId
-challenge.challengeId == challenge_engagements.challengeId
+challenge.challengeId == posts.postId<br />
+challenge.challengeId == challenge_engagements.challengeId<br />
 user.userId == setbacks.userId
 
 ```
