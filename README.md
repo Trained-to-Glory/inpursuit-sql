@@ -10,9 +10,9 @@ This call is to return posts matched with the user_interests. Return an array of
 
 ##### Joined Tables
 
-Posts
-Pursuits
-User
+Posts<br />
+Pursuits<br />
+User<br />
 User_interests
 
 #### WHERE Values
@@ -41,9 +41,9 @@ This call is to return the most viewed posts. Return an array of objects where t
 
 ##### Joined Tables
 
-Posts
-Pursuits
-User
+Posts<br />
+Pursuits<br />
+User<br />
 Posts_views
 
 #### WHERE Values
@@ -74,12 +74,12 @@ This call is to return the standard (an array of the most recent) posts. Return 
 
 ##### Joined Tables
 
-Posts
-Pursuits
-User
-Days
-Setbacks
-Team
+Posts<br />
+Pursuits<br />
+User<br />
+Days<br />
+Setbacks<br />
+Team<br />
 Engagements
 
 #### WHERE Values
@@ -132,9 +132,9 @@ This call is to return setbacks. Return an array of objects where the setbacks.p
 
 ##### Joined Tables
 
-Setbacks
-Pursuits
-Posts
+Setbacks<br />
+Pursuits<br />
+Posts<br />
 User
 
 #### WHERE Values
@@ -160,9 +160,9 @@ This call is to return challenges. Return an array of objects where the challeng
 
 ##### Joined Tables
 
-Challenge
-Challenge_engagements
-Posts
+Challenge<br />
+Challenge_engagements<br />
+Posts<br />
 User
 
 #### WHERE Values
